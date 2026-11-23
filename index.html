@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Sistema de gerenciamento aéreo Decolaê">
+  <title>Decolaê | Gestão aérea</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#inicio"><span class="brand-mark">D</span><span><strong>DECOLAÊ</strong><small>Sistema de Gestão Aérea</small></span></a>
+      <div class="role-switch"><label for="roleSelect">Perfil de acesso</label><select id="roleSelect"><option value="gerente">Gerente</option><option value="admin">Administrador</option></select></div>
+      <nav id="navigation" aria-label="Navegação principal"></nav>
+      <div class="sidebar-bottom"><div class="profile"><div class="avatar">U</div><div><strong>Usuário</strong><small id="profileRole">Gerente</small></div></div></div>
+    </aside>
+    <main class="main-area">
+      <header class="topbar"><button class="mobile-menu" id="menuToggle" aria-label="Abrir menu">☰</button><div class="breadcrumb"><span>Decolaê</span><span>/</span><strong id="breadcrumbCurrent">Início</strong></div><div class="topbar-right"><span id="todayLabel"></span><span class="user-chip">U</span></div></header>
+      <section class="content" id="appContent" aria-live="polite"></section>
+      <footer class="footer">DECOLAÊ <span>•</span> Sistema de Gestão Aérea <span class="footer-note">Protótipo funcional para testes</span></footer>
+    </main>
+  </div>
+  <div class="toast-region" id="toastRegion" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
